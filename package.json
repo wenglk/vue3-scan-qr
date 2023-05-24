@@ -1,0 +1,39 @@
+{
+    "name": "vue3-scan-qr",
+    "private": false,
+    "version": "0.0.1",
+    "main": "./dist/vue3-scan-qr.umd.js",
+    "module": "./dist/vue3-scan-qr.js",
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./dist/vue3-scan-qr.js",
+            "require": "./dist/vue3-scan-qr.umd.js"
+        }
+    },
+    "files": [
+        "dist/*"
+    ],
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "author": {
+        "name": "viken",
+        "email": "viken0408@outlook.com",
+        "url": "https://github.com/wenglk"
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "jsqr": "^1.4.0",
+        "vue": "^3.2.47"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^4.1.0",
+        "vite": "^4.3.2"
+    }
+}
