@@ -39,12 +39,21 @@ createApp(App).use(VScan).mount("#app");
         console.log(code);
         showScan.value = false;
     }
+
+    function errorCatch(error) {
+        console.log(error);
+    }
 </script>
 
 <template>
     <div>
         <button @click="showScan = true">Scan</button>
-        <v-scan v-model:visible="showScan" @scanned="output"></v-scan>
+        <v-scan
+            v-model:visible="showScan"
+            @scanned="output"
+            @error-catch="errorCatch"
+            :head-tip="Tip messages"
+        ></v-scan>
     </div>
 </template>
 ```

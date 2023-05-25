@@ -1,7 +1,7 @@
 {
     "name": "vue3-scan-qr",
     "private": false,
-    "version": "0.0.1",
+    "version": "0.0.2",
     "main": "./dist/vue3-scan-qr.umd.js",
     "module": "./dist/vue3-scan-qr.js",
     "type": "module",
@@ -23,6 +23,12 @@
         "email": "viken0408@outlook.com",
         "url": "https://github.com/wenglk"
     },
+    "keywords": [
+        "vue3-scan-qr",
+        "vue3-scan",
+        "vue3-qr",
+        "scan-qr"
+    ],
     "scripts": {
         "dev": "vite",
         "build": "vite build",
